@@ -31,6 +31,16 @@ let Receipt = mongoose.model("Receipt",Schema({
     
 }))
 
+app.get("/cart",(req,res)=>{
+    res.redirect("/")
+})
+app.get("/admin",(req,res)=>{
+    res.redirect("/")
+})
+app.get("/thankyou",(req,res)=>{
+    res.redirect("/")
+})
+
 const string_mongo = `mongodb+srv://${config.username}:${config.password}@cluster0.t0n6iqu.mongodb.net/${config.dbname}?retryWrites=true&w=majority`
 mongoose.connect(string_mongo).then((res)=>console.log("Connected"))
 .catch((err)=>console.log("Error",err))
