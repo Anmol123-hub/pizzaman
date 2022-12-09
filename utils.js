@@ -3,6 +3,6 @@ module.exports.errorHandler = function(error){
         console.log(error)
     }
     else{
-        console.log("Ready on port")
+        console.log("Ready on port number 2525")
     }
 }

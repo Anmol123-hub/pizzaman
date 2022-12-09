@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
-        /* @keyframes pizzaBoy {
-            from{
-                float: right;
-            }
-            to{
-                float: left;
-            }
-            
-        } */
-        @-webkit-keyframes run {
+      body{
+        background-image: url('../src/images/spbg.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgb(226,201,157)
+      }
+        @keyframes run {
   0% {
     right: -10%;
   }
@@ -46,17 +46,23 @@
   -webkit-animation-name: run;
   -webkit-animation-duration: 4s;
         }
+        div{
+          display: grid;
+          align-content: center;
+          justify-content: center;
+        }
+
         
       
     </style>
     <title>Pizza Man</title>
    
 </head>
-<body style="background-image: url('../src/images/spbg.jpg'); ">
-<img  src="../src/images/delivery-unscreen.gif"/>
-     <center>   
-                <a href="http://localhost:3000" >  <button id="splashbtn" type="button" class="btn btn-warning btn-lg">Get Started</button> </a>
-    </center>
-    
+<body >
+<div class="responsive">
+    <img  src="../src/images/delivery-unscreen.gif"/>
+    <a href="http://localhost:3000" > <button id="splashbtn" type="button" class="btn btn-warning btn-lg">Get Started</button> </a>
+</div>
+
 </body>
 </html>
